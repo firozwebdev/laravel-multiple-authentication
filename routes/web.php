@@ -26,7 +26,7 @@ Route::prefix('admin')->group( function() {
         'as' => 'admin.login'
     ]);
     Route::post('/login', [
-        'uses' => 'AdminLoginController@showLoginForm',
+        'uses' => 'AdminLoginController@login',
         'as' => 'admin.login.submit'
     ]);
 });
